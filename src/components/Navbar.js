@@ -10,12 +10,22 @@ const Navbar = () => {
             </NavLink>
             <ul className={styles.links_list}>
                 <li>
-                    <NavLink to="/" className={({isActive}) => (isActive ? styles.active : "")}>
+                    <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : "")}>
                         Home
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about" className={({isActive}) => (isActive ? styles.active : "")}>
+                    <NavLink to="/login" className={({ isActive }) => (isActive ? styles.active : "")}>
+                        Sign in
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/register" className={({ isActive }) => (isActive ? styles.active : "")}>
+                        Sign up
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/about" className={({ isActive }) => (isActive ? styles.active : "")}>
                         About
                     </NavLink>
                 </li>
