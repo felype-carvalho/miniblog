@@ -3,6 +3,9 @@ import './App.css';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { onAuthStateChanged } from "firebase/auth";
 
+// context
+import { AuthProvider } from './context/AuthContext';
+
 // hooks
 // import { useState, useEffect } from "react";
 // import { useAuthentication } from "./hooks/useAuthentication";
@@ -20,18 +23,20 @@ import Register from './pages/Register/Register';
 function App() {
     return (
         <div className="App">
-            <BrowserRouter>
-                <Navbar />
-                <div className='container'>
-                    <Routes>
-                        <Route path="/" element={<Home />}></Route>
-                        <Route path="/register" element={<Register />}></Route>
-                        <Route path="/login" element={<Login />}></Route>
-                        <Route path="/about" element={<About />}></Route>
-                    </Routes>
-                </div>
-                <Footer />
-            </BrowserRouter>
+            <AuthProvider>
+                <BrowserRouter>
+                    <Navbar />
+                    <div className='container'>
+                        <Routes>
+                            <Route path="/" element={<Home />}></Route>
+                            <Route path="/register" element={<Register />}></Route>
+                            <Route path="/login" element={<Login />}></Route>
+                            <Route path="/about" element={<About />}></Route>
+                        </Routes>
+                    </div>
+                    <Footer />
+                </BrowserRouter>
+            </AuthProvider>
         </div>
     );
 }
