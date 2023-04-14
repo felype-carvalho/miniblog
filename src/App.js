@@ -36,7 +36,7 @@ function App() {
     }, [auth]);
 
     if (loadingUser) {
-        return <p>Carregando...</p>;
+        return <p>Loading...</p>;
     }
 
     return (
@@ -47,11 +47,23 @@ function App() {
                     <div className='container'>
                         <Routes>
                             <Route path="/" element={<Home />} />
-                            <Route path="/register" element={<Register />} />
-                            <Route path="/login" element={<Login />} />
                             <Route path="/about" element={<About />} />
-                            <Route path="/posts/create" element={<CreatePost />} />
-                            <Route path="/dashboard" element={<Dashboard />} />
+                            <Route
+                                path="/register"
+                                element={!user ? <Register /> : <Navigate to="/" />}
+                            />
+                            <Route
+                                path="/login"
+                                element={!user ? <Login /> : <Navigate to="/" />}
+                            />
+                            <Route
+                                path="/posts/create"
+                                element={user ? <CreatePost /> : <Navigate to="/login" />}
+                            />
+                            <Route
+                                path="/dashboard"
+                                element={user ? <Dashboard /> : <Navigate to="/login" />}
+                            />
                         </Routes>
                     </div>
                     <Footer />
