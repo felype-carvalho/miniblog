@@ -19,6 +19,8 @@ import About from './pages/About/About';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import CreatePost from './pages/CreatePost/CreatePost';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
 
@@ -44,10 +46,12 @@ function App() {
                     <Navbar />
                     <div className='container'>
                         <Routes>
-                            <Route path="/" element={<Home />}></Route>
-                            <Route path="/register" element={<Register />}></Route>
-                            <Route path="/login" element={<Login />}></Route>
-                            <Route path="/about" element={<About />}></Route>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/register" element={<Register />} />
+                            <Route path="/login" element={<Login />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/posts/create" element={<CreatePost />} />
+                            <Route path="/dashboard" element={<Dashboard />} />
                         </Routes>
                     </div>
                     <Footer />
