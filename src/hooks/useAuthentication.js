@@ -67,9 +67,18 @@ export const useAuthentication = () => {
 
     }
 
+    // logout -sing out
+
+    const logout = () => {
+        // deal with memory leak
+        checkIfIsCancelled();
+
+        signOut(auth)
+    }
+
     useEffect(() => {
         return () => setCancelled(true);
     }, []);
 
-    return { auth, createUser, error, loading }
+    return { auth, createUser, error, loading, logout}
 }
