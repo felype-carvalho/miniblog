@@ -73,7 +73,7 @@ export const useAuthentication = () => {
         // deal with memory leak
         checkIfIsCancelled();
 
-        signOut(auth)
+        signOut(auth);
     }
 
     useEffect(() => {

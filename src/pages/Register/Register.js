@@ -46,7 +46,7 @@ const Register = () => {
             <p>Create your user and share your stories</p>
             <form onSubmit={handleSubmit}>
                 <label>
-                    <span>Nome:</span>
+                    <span>Name:</span>
                     <input
                         type="text"
                         name="displayName"
