@@ -11,9 +11,6 @@ const Navbar = () => {
 
     const {logout} = useAuthentication();
 
-
-
-
     return (
         <nav className={styles.navbar}>
             <NavLink to="/" className={styles.brand}>
@@ -60,7 +57,7 @@ const Navbar = () => {
                 </li>
                 {user && (
                     <li>
-                        <button onClick={logout()}>Log Out</button>
+                        <button onClick={logout}>Log Out</button>
                     </li>
                 )}
             </ul>
