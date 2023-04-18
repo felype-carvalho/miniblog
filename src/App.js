@@ -35,8 +35,6 @@ function App() {
         });
     }, [auth]);
 
-    console.log(user)
-
     if (loadingUser) {
         return <p>Loading...</p>;
     }
