@@ -10,7 +10,6 @@ import {
 
 export const useFetchDocuments = (docCollection, search = null, uid = null) => {
     const [documents, setDocuments] = useState(null);
-    const [first, setfirst] = useState(null);
     const [loading, setLoading] = useState(null);
     const [error, setError] = useState(null);
 
@@ -59,12 +58,12 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
 
         loadData();
 
-    }, [docCollection, search, uid, cancelled]);
+    }, [docCollection, documents, search, uid, cancelled]);
 
     // deal with memory leak
     useEffect(() => {
         return () => setCancelled(true);
     }, []);
 
-    return {documents, loading, error};
+    return { documents, loading, error };
 }
