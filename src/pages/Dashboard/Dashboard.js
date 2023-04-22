@@ -1,11 +1,33 @@
-import style from './Dashboard.module.css';
+import styles from './Dashboard.module.css';
+
+import { Link } from 'react-router-dom';
+
+//hooks
+import { useAuthValue } from '../../context/AuthContext';
+import { useFetchDocuments } from '../../hooks/useFetchDocuments';
+
 
 const Dashboard = () => {
-  return (
-    <div>
-        <h1>Dashboard</h1>
-    </div>
-  )
+    const { user } = useAuthValue();
+    const uid = user.uid;
+
+    // user posts
+    const posts = [];
+
+    return (
+        <div>
+            <h2>Dashboard</h2>
+            <p>Manage your posts</p>
+            {posts && posts.length === 0 ? (
+                <div className={styles.noposts}>
+                    <p>No posts found</p>
+                    <Link to="/posts/create" className="btn">Create first post</Link>
+                </div>
+            ) : (
+                <div>Have posts</div>
+            )}
+        </div>
+    )
 }
 
 export default Dashboard
