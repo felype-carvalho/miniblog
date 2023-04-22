@@ -8,10 +8,11 @@ import {
     where
 } from "firebase/firestore";
 
-export const useFetchDocuments = (docCollection, search = nul, uid = null) => {
+export const useFetchDocuments = (docCollection, search = null, uid = null) => {
     const [documents, setDocuments] = useState(null);
     const [first, setfirst] = useState(null);
     const [loading, setLoading] = useState(null);
+    const [error, setError] = useState(null);
 
     // deal with memory leak
     const [cancelled, setCancelled] = useState(false);
@@ -25,14 +26,14 @@ export const useFetchDocuments = (docCollection, search = nul, uid = null) => {
             const collectionRef = await collection(db, docCollection);
 
             try {
-                let qury;
+                let q;
 
                 //search
                 //dashboard
 
-                qury = await query(collection, orderBy('createAt', "desc"));
+                q = await query(collectionRef, orderBy("createAt", "desc"));
 
-                await onSnapshot(qury, (querySnapshot) => {
+                await onSnapshot(q, (querySnapshot) => {
                     setDocuments(
                         querySnapshot.docs.map((doc) => ({
                             id: doc.id,
