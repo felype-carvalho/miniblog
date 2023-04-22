@@ -38,7 +38,7 @@ const Home = () => {
                 {loading && <p>Loading...</p>}
                 {posts && posts.map((post) => (<PostDetail key={post.id} post={post}/>))}
                 {posts && posts.length === 0 && (
-                    <div className={styles.noposts}>
+                    <div className="noposts">
                         <p>No posts found</p>
                         <Link to="/post/create" className="btn">Create first post</Link>
                     </div>
