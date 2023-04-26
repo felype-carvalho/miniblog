@@ -124,7 +124,7 @@ const EditPost = () => {
                                 value={tags}
                             />
                         </label>
-                        {!response.loading && <button className="btn">Create Post</button>}
+                        {!response.loading && <button className="btn">Update Post</button>}
                         {response.loading && <button className="btn" disabled>Loading...</button>}
                         {response.error && <p className="error">{response.error}</p>}
                         {formError && <p className="error">{formError}</p>}
