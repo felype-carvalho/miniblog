@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Mini Blog 📝🤳📷
+ 
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Summary</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About the Project</a>
+      <ul>
+        <li><a href="#build-with">Build With</a></li>
+        <li><a href="#visual">Visual</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#how-to-use">How to use</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- ABOUT THE PROJECT -->
+## About the project
 
-## Available Scripts
+<p>Mini Blog is an application made in React and Firebase, which aims to be an environment where the user can post about his day-to-day life, work, travels, etc. You do not need to be registered to view posts, but to post you need to login.</p>
 
-In the project directory, you can run:
+<!-- BUILD WITH -->
+### Build With
+The technologies used in this project were:
+* [React](https://reactjs.org)
+* [Firebase](https://firebase.google.com/docs)
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- VISUAL -->
+### Visual
 
-### `npm test`
+<div align="center">
+ <img src="https://github.com/felype-carvalho/miniblog/assets/43687521/209f64e0-e30b-4319-9c90-4c5de8e00fab">
+</div>
+<div align="center">
+ <img src="https://github.com/felype-carvalho/miniblog/assets/43687521/b65ff81a-39fa-4a5e-84a0-5832e83ccd17">
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<!-- HOW TO USE -->
+## How to Use
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+``` git and npm ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1- Clone this repository.
+``` 
+git clone https://github.com/felype-carvalho/miniblog.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2- Access the project folder in your terminal/cmd.
+``` 
+cd miniblog
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3- Install the dependencies.
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4- Start the project
+``` 
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5-Open localhost:3000 in the browser and watch the project run
 
-## Learn More
+ 
+<!-- LICENSE -->
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Distributed under the MIT license. See `LICENSE` for more information.
