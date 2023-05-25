@@ -25,7 +25,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About the project
 
-<p>Mini Blog is an application made in React and Firebase, which aims to be an environment where the user can post about his day-to-day life, work, travels, etc. You do not need to be registered to view posts, but to post you need to login.</p>
+<p>Mini Blog is an application made in React and Firebase, which aims to be an environment where the user can post about his day-to-day life, work, travels, etc.</p>
+<p>In the application it is possible to register, log in and view posts from other users. Also create, edit, update and delete posts from a dashboard.</p>
 
 <!-- BUILD WITH -->
 ### Build With
