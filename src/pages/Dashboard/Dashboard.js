@@ -32,7 +32,7 @@ const Dashboard = () => {
             ) : (
                 <>
                     <div className={styles.post_header}>
-                        <span>Title</span>
+                        <span>Title </span>
                         <span>Actions</span>
                     </div>
 

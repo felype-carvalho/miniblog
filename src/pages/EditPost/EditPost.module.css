@@ -1,5 +1,6 @@
 .edit_post {
     text-align: center;
+    color: #fff;
 }
 
 .edit_post h2 {
@@ -13,7 +14,7 @@
 
 .edit_post .preview_title {
     margin-bottom: .2em;
-    color: #000;
+    color: #FFF;
     font-weight: bold;
 }
 

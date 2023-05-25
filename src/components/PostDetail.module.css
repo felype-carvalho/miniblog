@@ -10,6 +10,10 @@
     margin-bottom: .4em;
 }
 
+.post_detail p {
+    color: #AAA;
+}
+
 .post_detail .tags {
     margin-bottom: 1.2em;
     display: flex;
@@ -17,6 +21,7 @@
 
 .tags p {
     margin-right: .5em;
+    color: #CCC;
 }
 
 .createby {

@@ -9,11 +9,16 @@
 .dashboard h2 {
     font-size: 2.2em;
     margin-bottom: .5em;
+    color: #fff;
 }
 
 .dashboard p {
     color: #aaa;
     margin-bottom: 1em;
+}
+
+.dashboard span {
+    color: #FFF;
 }
 
 .post-header,
@@ -35,7 +40,7 @@
 }
 
 .post_row p {
-    color: #000;
+    color: #FFF;
 }
 
 .post_row button,

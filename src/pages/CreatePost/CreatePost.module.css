@@ -4,6 +4,11 @@
 
 .create_post h2 {
     font-size: 2.2em;
+    color: #fff;
+}
+
+.create_post span{
+    color: #fff;
 }
 
 .create_post p {

@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: .5em 2em;
+    background-color: #1c2128;
 }
 
 .brand {
@@ -25,6 +26,6 @@
 }
 
 .active {
-    background-color: #000;
-    color: #fff;
+    background-color: #bbb;
+    color: #000;
 }
